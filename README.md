@@ -40,12 +40,12 @@
 
 # Please Star : https://github.com/ineo6/hosts
 # Mirror Repo : https://gitee.com/ineo6/hosts
-# Update at: 2021-03-28 09:54:34
+# Update at: 2021-03-28 18:14:36
 
 # GitHub Host End
 ```
 
-上面内容会自动定时更新，保证最新有效。数据更新时间：2021-03-28 09:54:34（内容无变动不会更新）
+上面内容会自动定时更新，保证最新有效。数据更新时间：2021-03-28 18:14:36（内容无变动不会更新）
 
 ### 手动配置hosts
 
@@ -103,5 +103,5 @@ ipconfig /flushdns
 
 - 方案名称：任意
 - 类型：远程
-- 地址：https://cdn.jsdelivr.net/gh/ineo6/githubhosts/hosts
+- 地址：https://cdn.jsdelivr.net/gh/ineo6/hosts/hosts
 - 自动更新：1个小时
