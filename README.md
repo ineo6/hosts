@@ -40,12 +40,12 @@
 
 # Please Star : https://github.com/ineo6/hosts
 # Mirror Repo : https://gitee.com/ineo6/hosts
-# Update at: 2021-03-29 00:23:36
+# Update at: 2021-03-29 02:26:19
 
 # GitHub Host End
 ```
 
-上面内容会自动定时更新，保证最新有效。数据更新时间：2021-03-29 00:23:36（内容无变动不会更新）
+上面内容会自动定时更新，保证最新有效。数据更新时间：2021-03-29 02:26:19（内容无变动不会更新）
 
 ### 手动配置hosts
 
