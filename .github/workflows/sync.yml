@@ -1,0 +1,45 @@
+name: SyncHosts
+
+on:
+  push:
+  schedule:
+    - cron: '0 */2 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Update hosts
+        run: npm run build
+
+      - name: Commit
+        id: commit
+        run: |
+          git config --global user.email arklove@qq.com
+          git config --global user.name neo
+          git add .
+          git commit -m "Update hosts"
+        continue-on-error: true
+
+      - name: Check on failures
+        if: steps.commit.outputs.status == 'failure'
+        run: exit 1
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.COMMIT_TOKEN }}

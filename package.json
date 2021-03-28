@@ -1,0 +1,26 @@
+{
+  "name": "hosts",
+  "version": "1.0.0",
+  "description": "GitHub最新hosts文件",
+  "main": "index.js",
+  "scripts": {
+    "make": "node ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ineo6",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.5",
+    "dayjs": "^1.10.4",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "10.1.0",
+    "eslint": "7.12.0",
+    "eslint-config-airbnb-base": "14.2.0",
+    "eslint-config-magic": "2.1.0",
+    "eslint-plugin-eslint-comments": "3.2.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-promise": "4.2.1"
+  }
+}

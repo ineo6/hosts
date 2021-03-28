@@ -1,0 +1,74 @@
+# GitHub Hosts
+
+仓库有什么用？
+
+主要是通过修改`host`的方式加速`GitHub`访问，解决图片无法加载以及访问速度慢的问题。
+
+## 使用方式
+
+### hosts
+
+```bash
+{hostContent}
+```
+
+上面内容会自动定时更新，保证最新有效。数据更新时间：{update_time}（内容无变动不会更新）
+
+### 手动配置hosts
+
+#### macOS
+
+`hosts`文件位置：`/etc/hosts`。
+
+`macOS`系统下修改需要按照如下方式：
+
+##### 1：首先，打开（访达）Finder。
+
+##### 2：使用组合键`Shift+Command+G`打开"前往文件夹"，输入框中输入`/etc/hosts`。
+
+##### 3：然后就会跳转到`hosts`文件位置。
+
+> 注意：如果你使用`VS Code`，可以直接用`VS Code`修改和保存，不需要复制文件。
+
+复制`hosts`文件到桌面上，鼠标右键右击它，选择「打开方式」—「文本编辑」，打开这个`hosts`文件，把前面的`hosts`内容复制进来。
+
+然后把你修改好的`hosts`文件替换掉：`/etc/hosts` 文件。
+
+注意：如果弹出密码输入框，你需要输入你当前登录账号对应的密码。
+
+最后刷新缓存：
+
+```shell
+sudo killall -HUP mDNSResponder
+```
+
+#### Windows
+
+`hosts`文件位置：`C:/windows/system32/drivers/etc/hosts`。
+
+将前文`hosts`内容追加到`hosts`文件，然后刷新`DNS`缓存：
+
+```shell
+ipconfig /flushdns
+```
+
+### 通过 SwitchHosts! 自动更新
+
+这里推荐使用 `SwitchHosts!` 配置`hosts`，操作很简单，支持跨平台。
+
+详细介绍可以阅读[SwitchHosts! 还能这样管理hosts，后悔没早点用](https://mp.weixin.qq.com/s/A37XnD3HdcGSWUflj6JujQ) 。
+
+#### 纯配置
+
+添加一条`hosts`规则并启用，然后复制前文`hosts`内容即可。
+
+如果你想保持和云端最新规则同步，可以用下面的配置方式。
+
+#### 定时同步
+
+添加一条规则：
+
+- 方案名称：任意
+- 类型：远程
+- 地址：https://cdn.jsdelivr.net/gh/ineo6/githubhosts/hosts
+- 自动更新：1个小时
