@@ -70,5 +70,5 @@ ipconfig /flushdns
 
 - 方案名称：任意
 - 类型：远程
-- 地址：https://cdn.jsdelivr.net/gh/ineo6/githubhosts/hosts
+- 地址：https://cdn.jsdelivr.net/gh/ineo6/hosts/hosts
 - 自动更新：1个小时
