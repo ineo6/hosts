@@ -18,7 +18,7 @@
 185.199.108.133              camo.githubusercontent.com
 185.199.108.133              github.map.fastly.net
 199.232.69.194               github.global.ssl.fastly.net
-140.82.112.3                 gist.github.com
+140.82.113.3                 gist.github.com
 140.82.113.6                 api.github.com
 185.199.108.133              raw.githubusercontent.com
 185.199.108.133              user-images.githubusercontent.com
@@ -30,7 +30,7 @@
 185.199.108.133              avatars1.githubusercontent.com
 185.199.108.133              avatars0.githubusercontent.com
 185.199.108.133              avatars.githubusercontent.com
-140.82.114.10                codeload.github.com
+140.82.114.9                 codeload.github.com
 52.217.75.209                github-cloud.s3.amazonaws.com
 52.216.179.211               github-com.s3.amazonaws.com
 52.217.10.12                 github-production-release-asset-2e65be.s3.amazonaws.com
@@ -40,12 +40,12 @@
 
 # Please Star : https://github.com/ineo6/hosts
 # Mirror Repo : https://gitee.com/ineo6/hosts
-# Update at: 2021-03-28 18:16:50
+# Update at: 2021-03-28 18:51:36
 
 # GitHub Host End
 ```
 
-上面内容会自动定时更新，保证最新有效。数据更新时间：2021-03-28 18:16:50（内容无变动不会更新）
+上面内容会自动定时更新，保证最新有效。数据更新时间：2021-03-28 18:51:36（内容无变动不会更新）
 
 ### 手动配置hosts
 
