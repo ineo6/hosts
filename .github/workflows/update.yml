@@ -1,4 +1,4 @@
-name: SyncHosts
+name: UpdateHosts
 
 on:
   push:
@@ -24,7 +24,7 @@ jobs:
         run: npm install
 
       - name: Update hosts
-        run: npm run build
+        run: npm run make
 
       - name: Commit
         id: commit
