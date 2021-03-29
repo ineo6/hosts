@@ -29,8 +29,8 @@ jobs:
       - name: Commit
         id: commit
         run: |
-          git config --global user.email arklove@qq.com
-          git config --global user.name neo
+          git config --global user.email hostsBot@fake.com
+          git config --global user.name hostsBot
           git add .
           git commit -m "Update hosts"
         continue-on-error: true
