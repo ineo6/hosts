@@ -1,18 +1,21 @@
 # GitHub Hosts
 
-仓库有什么用？
+这个有什么用？最直观的效果是`GitHub`图片可以正常加载，网页也稳定了。
 
-主要是通过修改`host`的方式加速`GitHub`访问，解决图片无法加载以及访问速度慢的问题。
+`GitHub Hosts`主要是通过修改`host`的方式加速`GitHub`访问，解决图片无法加载以及访问速度慢的问题。
+
+- 主站: https://github.com/ineo6/hosts
+- 镜像地址: https://gitee.com/ineo6/hosts
 
 ## 使用方式
 
 ### hosts
 
+内容定时更新，最近更新时间：{update_time}。
+
 ```bash
 {hostContent}
 ```
-
-上面内容会自动定时更新，保证最新有效。数据更新时间：{update_time}（内容无变动不会更新）
 
 ### 手动配置hosts
 
@@ -56,9 +59,9 @@ ipconfig /flushdns
 
 这里推荐使用 `SwitchHosts!` 配置`hosts`，操作很简单，支持跨平台。
 
-详细介绍可以阅读[SwitchHosts! 还能这样管理hosts，后悔没早点用](https://mp.weixin.qq.com/s/A37XnD3HdcGSWUflj6JujQ) 。
+详细介绍可以阅读 [SwitchHosts! 还能这样管理hosts，后悔没早点用](https://mp.weixin.qq.com/s/A37XnD3HdcGSWUflj6JujQ) 。
 
-#### 纯配置
+#### 手动配置
 
 添加一条`hosts`规则并启用，然后复制前文`hosts`内容即可。
 
@@ -68,7 +71,11 @@ ipconfig /flushdns
 
 添加一条规则：
 
-- 方案名称：任意
+- 方案名：GitHub（可以自行命名）
 - 类型：远程
-- 地址：https://cdn.jsdelivr.net/gh/ineo6/hosts/hosts
+- URL 地址：https://cdn.jsdelivr.net/gh/ineo6/hosts/hosts
 - 自动更新：1个小时
+
+这样就可以和最新的`hosts`保持同步。
+
+![switchhost-github.png](https://i.loli.net/2021/03/28/XnHW5xCEzel36fA.png)
