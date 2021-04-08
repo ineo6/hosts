@@ -79,3 +79,10 @@ ipconfig /flushdns
 这样就可以和最新的`hosts`保持同步。
 
 ![switchhost-github.png](https://i.loli.net/2021/03/28/XnHW5xCEzel36fA.png)
+
+## 我的作品
+
+- [GitMaster](https://github.com/ineo6/git-master)：开发者助手，代码仓库结构浏览扩展
+- [homebrew-install](https://github.com/ineo6/homebrew-install)：Homebrew快速安装教程和脚本
+- [GitHub Hosts](https://github.com/ineo6/hosts)：GitHub最新hosts，定时更新
+- [mp-ci](https://github.com/ineo6/mp-ci)：微信小程序、小游戏发布助手（CI）
