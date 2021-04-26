@@ -11,7 +11,7 @@
 
 ### hosts
 
-内容定时更新，最近更新时间：2021-04-27 04:14:46。
+内容定时更新，最近更新时间：2021-04-27 06:17:02。
 
 ```bash
 # GitHub Host Start
@@ -45,7 +45,7 @@
 
 # Please Star : https://github.com/ineo6/hosts
 # Mirror Repo : https://gitee.com/ineo6/hosts
-# Update at: 2021-04-27 04:14:46
+# Update at: 2021-04-27 06:17:02
 
 # GitHub Host End
 ```
