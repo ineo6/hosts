@@ -68,7 +68,7 @@ function lJust(str, total, pad) {
 function resolveUrl(url) {
   const urlBody = url.split('.');
 
-  if (urlBody.length > 1) {
+  if (urlBody.length > 2) {
     return 'https://' + urlBody[urlBody.length - 2] + '.' + urlBody[urlBody.length - 1] + ipAddressFooter + '/' + url;
   }
 
@@ -87,10 +87,13 @@ async function findIp(host) {
 
   $('#dnsinfo>tr')
     .each(function (i, element) {
-      ipList.push($(this)
+      let td = $(this).children();
+      if ($(td[1]).text() == 'A') {
+        ipList.push($(this)
         .children()
         .last()
         .text());
+      }
     });
 
   return ipList;
