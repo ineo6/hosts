@@ -50,14 +50,9 @@ const mdPath = {
 const ipAddressFooter = '.ipaddress.com';
 
 const tpl = `
-# GitHub Host Start
-
 {content}
 # Please Star : https://github.com/ineo6/hosts
 # Mirror Repo : https://gitee.com/ineo6/hosts
-# Update at: {update_time}
-
-# GitHub Host End
 `;
 
 function lJust(str, total, pad) {
@@ -128,13 +123,14 @@ function updateMd(content) {
   try {
     prevMd = fs.readFileSync(mdPath.dest, 'utf-8');
   } catch (err) {
+
   }
 
-  const regMatch = /```bash([\s\S]*)```/.exec(prevMd);
-
+  const regMatch = prevMd.match(/GitHub Host Start([\s\S]*)# Update at/);
   const prevHost = regMatch ? regMatch[1].trim() : '';
 
   const needUpdate = prevHost !== content;
+  console.log("needUpdate", needUpdate);
 
   if (needUpdate) {
     const updateTime = dayjs()
@@ -143,7 +139,7 @@ function updateMd(content) {
 
     const template = fs.readFileSync(mdPath.tpl, 'utf-8');
 
-    const nextHostContent = content.replace('{update_time}', updateTime);
+    const nextHostContent = "# GitHub Host Start\n\n" + content + "\n# Update at: " + updateTime + "\n\n# GitHub Host End";
 
     const replacedMdContent = template.replace('{hostContent}', nextHostContent)
       .replace('{update_time}', updateTime);
