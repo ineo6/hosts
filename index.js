@@ -83,7 +83,7 @@ async function findIp(host) {
   $('#dnsinfo>tr')
     .each(function (i, element) {
       let td = $(this).children();
-      if ($(td[1]).text() == 'A') {
+      if ($(td[1]).text() === 'A') {
         ipList.push($(this)
         .children()
         .last()
@@ -130,7 +130,6 @@ function updateMd(content) {
   const prevHost = regMatch ? regMatch[1].trim() : '';
 
   const needUpdate = prevHost !== content;
-  console.log("needUpdate", needUpdate);
 
   if (needUpdate) {
     const updateTime = dayjs()
