@@ -41,6 +41,10 @@ const githubUrls = [
   'media.githubusercontent.com'
 ];
 
+const headers = {
+  'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36',
+};
+
 const mdPath = {
   tpl: path.join('./', 'template.md'),
   dest: path.join('./', 'README.md'),
@@ -73,7 +77,9 @@ function resolveUrl(url) {
 async function findIp(host) {
   const url = resolveUrl(host);
 
-  const response = await fetch(url);
+  const response = await fetch(url, {
+    headers: headers
+  });
   const htmlText = await response.text();
 
   const $ = cheerio.load(htmlText);
@@ -138,7 +144,7 @@ function updateMd(content) {
 
     const template = fs.readFileSync(mdPath.tpl, 'utf-8');
 
-    const nextHostContent = "# GitHub Host Start\n\n" + content + "\n# Update at: " + updateTime + "\n\n# GitHub Host End";
+    const nextHostContent = '# GitHub Host Start\n\n' + content + '\n# Update at: ' + updateTime + '\n\n# GitHub Host End';
 
     const replacedMdContent = template.replace('{hostContent}', nextHostContent)
       .replace('{update_time}', updateTime);
