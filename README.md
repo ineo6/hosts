@@ -11,7 +11,7 @@
 
 ### hosts
 
-内容定时更新，最近更新时间：2021-06-29 08:32:28。
+内容定时更新，最近更新时间：2021-06-29 10:24:25。
 
 ```bash
 # GitHub Host Start
@@ -25,8 +25,8 @@
 199.232.69.194               github.global.ssl.fastly.net
 140.82.113.4                 gist.github.com
 185.199.108.153              github.io
-140.82.114.4                 github.com
-140.82.113.6                 api.github.com
+140.82.113.3                 github.com
+140.82.114.6                 api.github.com
 185.199.108.133              raw.githubusercontent.com
 185.199.108.133              user-images.githubusercontent.com
 185.199.108.133              favicons.githubusercontent.com
@@ -37,19 +37,19 @@
 185.199.108.133              avatars1.githubusercontent.com
 185.199.108.133              avatars0.githubusercontent.com
 185.199.108.133              avatars.githubusercontent.com
-140.82.114.9                 codeload.github.com
-52.217.92.204                github-cloud.s3.amazonaws.com
-52.216.140.44                github-com.s3.amazonaws.com
-52.217.105.164               github-production-release-asset-2e65be.s3.amazonaws.com
-52.216.206.155               github-production-user-asset-6210df.s3.amazonaws.com
-52.217.49.68                 github-production-repository-file-5c1aeb.s3.amazonaws.com
+140.82.112.9                 codeload.github.com
+52.217.98.196                github-cloud.s3.amazonaws.com
+52.216.248.172               github-com.s3.amazonaws.com
+52.217.11.124                github-production-release-asset-2e65be.s3.amazonaws.com
+52.217.15.68                 github-production-user-asset-6210df.s3.amazonaws.com
+52.216.92.139                github-production-repository-file-5c1aeb.s3.amazonaws.com
 185.199.108.153              githubstatus.com
 64.71.168.201                github.community
 185.199.108.133              media.githubusercontent.com
 
 # Please Star : https://github.com/ineo6/hosts
 # Mirror Repo : https://gitee.com/ineo6/hosts
-# Update at: 2021-06-29 08:32:28
+# Update at: 2021-06-29 10:24:25
 
 # GitHub Host End
 ```
