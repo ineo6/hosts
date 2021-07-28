@@ -43,6 +43,13 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.COMMIT_TOKEN }}
+                  
+      # Delete useless workflows;
+      - name: Delete workflow runs
+        uses: GitRML/delete-workflow-runs@main
+        with:
+          retain_days: 0.1
+          keep_minimum_runs: 1
 
   git-mirror:
     needs: build
