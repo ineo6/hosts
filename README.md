@@ -11,7 +11,7 @@
 
 ### hosts
 
-内容定时更新，最近更新时间：2021-08-02 22:09:19。
+内容定时更新，最近更新时间：2021-08-02 23:26:52。
 
 ```bash
 # GitHub Host Start
@@ -23,7 +23,7 @@
 185.199.108.133              camo.githubusercontent.com
 185.199.108.133              github.map.fastly.net
 199.232.5.194                github.global.ssl.fastly.net
-140.82.113.4                 gist.github.com
+140.82.112.4                 gist.github.com
 185.199.108.153              github.io
 140.82.114.3                 github.com
 140.82.112.6                 api.github.com
@@ -38,7 +38,7 @@
 185.199.108.133              avatars0.githubusercontent.com
 185.199.108.133              avatars.githubusercontent.com
 140.82.114.9                 codeload.github.com
-52.217.192.41                github-cloud.s3.amazonaws.com
+52.216.112.195               github-cloud.s3.amazonaws.com
 52.217.74.20                 github-com.s3.amazonaws.com
 52.217.0.11                  github-production-release-asset-2e65be.s3.amazonaws.com
 52.216.250.204               github-production-user-asset-6210df.s3.amazonaws.com
@@ -49,7 +49,7 @@
 
 # Please Star : https://github.com/ineo6/hosts
 # Mirror Repo : https://gitee.com/ineo6/hosts
-# Update at: 2021-08-02 22:09:19
+# Update at: 2021-08-02 23:26:52
 
 # GitHub Host End
 ```
@@ -119,7 +119,8 @@ ipconfig /flushdns
 
 ## 我的作品
 
-- [GitMaster](https://github.com/ineo6/git-master)：开发者助手，代码仓库结构浏览扩展
+- [GitMaster](https://github.com/ineo6/git-master)：开发者助手，代码仓库结构浏览器扩展
+- [Weekly 周刊](https://github.com/ineo6/weekly)：我的前端周刊，GitHub周刊
 - [homebrew-install](https://github.com/ineo6/homebrew-install)：Homebrew快速安装教程和脚本
 - [GitHub Hosts](https://github.com/ineo6/hosts)：GitHub最新hosts，定时更新
 - [mp-ci](https://github.com/ineo6/mp-ci)：微信小程序、小游戏发布助手（CI）
