@@ -11,13 +11,13 @@
 
 ### hosts
 
-内容定时更新，最近更新时间：2021-09-28 22:09:49。
+内容定时更新，最近更新时间：2021-09-29 00:15:19。
 
 ```bash
 # GitHub Host Start
 
 185.199.108.154              github.githubassets.com
-140.82.112.21                central.github.com
+140.82.113.22                central.github.com
 185.199.108.133              desktop.githubusercontent.com
 185.199.108.153              assets-cdn.github.com
 185.199.108.133              camo.githubusercontent.com
@@ -25,7 +25,7 @@
 199.232.69.194               github.global.ssl.fastly.net
 140.82.114.4                 gist.github.com
 185.199.108.153              github.io
-140.82.112.3                 github.com
+140.82.113.4                 github.com
 140.82.114.5                 api.github.com
 185.199.108.133              raw.githubusercontent.com
 185.199.108.133              user-images.githubusercontent.com
@@ -37,19 +37,19 @@
 185.199.108.133              avatars1.githubusercontent.com
 185.199.108.133              avatars0.githubusercontent.com
 185.199.108.133              avatars.githubusercontent.com
-140.82.113.10                codeload.github.com
+140.82.112.10                codeload.github.com
 52.217.134.113               github-cloud.s3.amazonaws.com
-52.217.1.172                 github-com.s3.amazonaws.com
-52.216.130.195               github-production-release-asset-2e65be.s3.amazonaws.com
-52.217.49.20                 github-production-user-asset-6210df.s3.amazonaws.com
-52.216.134.11                github-production-repository-file-5c1aeb.s3.amazonaws.com
+52.217.38.252                github-com.s3.amazonaws.com
+52.216.76.212                github-production-release-asset-2e65be.s3.amazonaws.com
+52.217.79.228                github-production-user-asset-6210df.s3.amazonaws.com
+52.217.79.228                github-production-repository-file-5c1aeb.s3.amazonaws.com
 185.199.108.153              githubstatus.com
 64.71.144.202                github.community
 185.199.108.133              media.githubusercontent.com
 
 # Please Star : https://github.com/ineo6/hosts
 # Mirror Repo : https://gitee.com/ineo6/hosts
-# Update at: 2021-09-28 22:09:49
+# Update at: 2021-09-29 00:15:19
 
 # GitHub Host End
 ```
