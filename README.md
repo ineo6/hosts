@@ -11,22 +11,22 @@
 
 ### hosts
 
-内容定时更新，最近更新时间：2021-10-10 14:12:19。
+内容定时更新，最近更新时间：2021-10-10 16:12:20。
 
 ```bash
 # GitHub Host Start
 
 185.199.108.154              github.githubassets.com
-140.82.112.21                central.github.com
+140.82.113.22                central.github.com
 185.199.108.133              desktop.githubusercontent.com
 185.199.108.153              assets-cdn.github.com
 185.199.108.133              camo.githubusercontent.com
 185.199.108.133              github.map.fastly.net
 199.232.69.194               github.global.ssl.fastly.net
-140.82.113.4                 gist.github.com
+140.82.112.3                 gist.github.com
 185.199.108.153              github.io
-140.82.114.4                 github.com
-140.82.114.5                 api.github.com
+140.82.112.3                 github.com
+140.82.114.6                 api.github.com
 185.199.108.133              raw.githubusercontent.com
 185.199.108.133              user-images.githubusercontent.com
 185.199.108.133              favicons.githubusercontent.com
@@ -37,19 +37,19 @@
 185.199.108.133              avatars1.githubusercontent.com
 185.199.108.133              avatars0.githubusercontent.com
 185.199.108.133              avatars.githubusercontent.com
-140.82.114.10                codeload.github.com
-52.216.109.107               github-cloud.s3.amazonaws.com
-52.216.86.51                 github-com.s3.amazonaws.com
-52.217.89.156                github-production-release-asset-2e65be.s3.amazonaws.com
+140.82.112.9                 codeload.github.com
+52.216.246.36                github-cloud.s3.amazonaws.com
+52.217.204.17                github-com.s3.amazonaws.com
+52.216.82.80                 github-production-release-asset-2e65be.s3.amazonaws.com
 52.217.193.25                github-production-user-asset-6210df.s3.amazonaws.com
-52.216.187.91                github-production-repository-file-5c1aeb.s3.amazonaws.com
+52.217.103.156               github-production-repository-file-5c1aeb.s3.amazonaws.com
 185.199.108.153              githubstatus.com
 64.71.144.202                github.community
 185.199.108.133              media.githubusercontent.com
 
 # Please Star : https://github.com/ineo6/hosts
 # Mirror Repo : https://gitee.com/ineo6/hosts
-# Update at: 2021-10-10 14:12:19
+# Update at: 2021-10-10 16:12:20
 
 # GitHub Host End
 ```
