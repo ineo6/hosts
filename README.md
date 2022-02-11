@@ -11,19 +11,19 @@
 
 ### hosts
 
-内容定时更新，最近更新时间：2022-02-11 16:12:41。
+内容定时更新，最近更新时间：2022-02-11 18:11:53。
 
 ```bash
 # GitHub Host Start
 
 185.199.108.154              github.githubassets.com
-140.82.112.22                central.github.com
+140.82.113.21                central.github.com
 185.199.108.133              desktop.githubusercontent.com
 185.199.108.153              assets-cdn.github.com
 185.199.108.133              camo.githubusercontent.com
 185.199.108.133              github.map.fastly.net
 199.232.69.194               github.global.ssl.fastly.net
-140.82.114.3                 gist.github.com
+140.82.112.3                 gist.github.com
 185.199.108.153              github.io
 140.82.112.4                 github.com
 140.82.112.5                 api.github.com
@@ -37,7 +37,7 @@
 185.199.108.133              avatars1.githubusercontent.com
 185.199.108.133              avatars0.githubusercontent.com
 185.199.108.133              avatars.githubusercontent.com
-140.82.112.10                codeload.github.com
+140.82.114.9                 codeload.github.com
 52.216.92.203                github-cloud.s3.amazonaws.com
 52.217.76.156                github-com.s3.amazonaws.com
 52.217.194.89                github-production-release-asset-2e65be.s3.amazonaws.com
@@ -49,7 +49,7 @@
 
 # Please Star : https://github.com/ineo6/hosts
 # Mirror Repo : https://gitee.com/ineo6/hosts
-# Update at: 2022-02-11 16:12:41
+# Update at: 2022-02-11 18:11:53
 
 # GitHub Host End
 ```
