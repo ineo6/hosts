@@ -11,7 +11,7 @@
 
 ### hosts
 
-内容定时更新，最近更新时间：2022-03-13 22:11:15。
+内容定时更新，最近更新时间：2022-03-14 00:16:21。
 
 ```bash
 # GitHub Host Start
@@ -38,7 +38,7 @@
 185.199.108.133              avatars0.githubusercontent.com
 185.199.108.133              avatars.githubusercontent.com
 140.82.114.9                 codeload.github.com
-52.217.88.148                github-cloud.s3.amazonaws.com
+54.231.198.217               github-cloud.s3.amazonaws.com
 52.217.164.49                github-com.s3.amazonaws.com
 52.217.79.60                 github-production-release-asset-2e65be.s3.amazonaws.com
 52.216.134.83                github-production-user-asset-6210df.s3.amazonaws.com
@@ -49,7 +49,7 @@
 
 # Please Star : https://github.com/ineo6/hosts
 # Mirror Repo : https://gitee.com/ineo6/hosts
-# Update at: 2022-03-13 22:11:15
+# Update at: 2022-03-14 00:16:21
 
 # GitHub Host End
 ```
