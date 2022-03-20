@@ -11,7 +11,7 @@
 
 ### hosts
 
-内容定时更新，最近更新时间：2022-03-20 20:18:44。
+内容定时更新，最近更新时间：2022-03-20 22:14:29。
 
 ```bash
 # GitHub Host Start
@@ -23,7 +23,7 @@
 185.199.108.133              camo.githubusercontent.com
 185.199.108.133              github.map.fastly.net
 199.232.69.194               github.global.ssl.fastly.net
-140.82.113.3                 gist.github.com
+140.82.112.3                 gist.github.com
 185.199.108.153              github.io
 140.82.112.3                 github.com
 140.82.113.6                 api.github.com
@@ -49,7 +49,7 @@
 
 # Please Star : https://github.com/ineo6/hosts
 # Mirror Repo : https://gitee.com/ineo6/hosts
-# Update at: 2022-03-20 20:18:44
+# Update at: 2022-03-20 22:14:29
 
 # GitHub Host End
 ```
