@@ -11,7 +11,7 @@
 
 ### hosts
 
-内容定时更新，最近更新时间：2022-03-27 22:10:45。
+内容定时更新，最近更新时间：2022-03-27 22:57:55。
 
 ```bash
 # GitHub Host Start
@@ -46,10 +46,11 @@
 185.199.108.153              githubstatus.com
 64.71.144.202                github.community
 185.199.108.133              media.githubusercontent.com
+185.199.108.133              raw.github.com
 
 # Please Star : https://github.com/ineo6/hosts
 # Mirror Repo : https://gitee.com/ineo6/hosts
-# Update at: 2022-03-27 22:10:45
+# Update at: 2022-03-27 22:57:55
 
 # GitHub Host End
 ```
