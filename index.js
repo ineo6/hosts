@@ -38,7 +38,8 @@ const githubUrls = [
   'github-production-repository-file-5c1aeb.s3.amazonaws.com',
   'githubstatus.com',
   'github.community',
-  'media.githubusercontent.com'
+  'media.githubusercontent.com',
+  'raw.github.com'
 ];
 
 const headers = {
