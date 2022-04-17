@@ -39,6 +39,7 @@ const githubUrls = [
   'githubstatus.com',
   'github.community',
   'media.githubusercontent.com',
+  'objects.githubusercontent.com',
   'raw.github.com'
 ];
 
