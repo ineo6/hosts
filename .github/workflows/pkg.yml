@@ -24,7 +24,7 @@ jobs:
       - run: |
           set -xeu
           npm run build
-          ./node_modules/.bin/pkg --out-path=hosts-server-pkg-${{ matrix.pkg_target_without_node }} --targets=node16-${{ matrix.pkg_target_without_node }} ./dist/cli.js
+          ./node_modules/.bin/pkg --out-path=hosts-server-pkg-${{ matrix.pkg_target_without_node }} --targets=node16-${{ matrix.pkg_target_without_node }} .
       - name: tar.gz or zip
         run: |
           set -xeu
@@ -62,7 +62,7 @@ jobs:
           cd /app
           npm ci
           npm run build
-          ./node_modules/.bin/pkg --out-path=hosts-server-pkg-${{ matrix.pkg_target_without_node }} --targets=node16-${{ matrix.pkg_target_without_node }} ./dist/cli.js
+          ./node_modules/.bin/pkg --out-path=hosts-server-pkg-${{ matrix.pkg_target_without_node }} --targets=node16-${{ matrix.pkg_target_without_node }} .
           EOF
       - name: tar.gz or zip
         run: |
