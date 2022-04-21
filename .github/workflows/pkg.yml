@@ -51,8 +51,7 @@ jobs:
       - run: |
           set -xeu
           # NOTE: node:16 image causes an error "glob error [Error: EACCES: permission denied, scandir '/root/.npm/_logs'] { ..."
-          docker run --rm -i -v $PWD:/app --platform=linux/arm64/v8 node:14 bash << 'EOF'
-          #!/bin/bash
+          docker run --rm -i -v $PWD:/app --platform=linux/arm64/v8 node:14 /bin/bash << 'EOF'
           set -xeu
           # Install ldid for macos-arm64 signing
           curl -LO https://github.com/ProcursusTeam/ldid/releases/download/v2.1.5-procursus2/ldid_linux_aarch64
