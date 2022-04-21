@@ -2,25 +2,44 @@
   "name": "hosts",
   "version": "1.0.0",
   "description": "GitHub最新hosts文件",
-  "main": "index.js",
+  "main": "src/index.ts",
+  "bin": "./bin/host-cli.js",
   "scripts": {
-    "make": "node ./index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "make": "ts-node ./src/index.ts --type=default",
+    "make:next": "ts-node ./src/index.ts --type=next",
+    "pkg:mac": "pkg ./dist/cli.js -t node14-mac-x64 -o app-mac",
+    "pkg:win": "pkg ./dist/cli.js -t node14-win-x64 -o app-win"
   },
   "author": "ineo6",
   "license": "MIT",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.5",
+    "chalk": "^4.1.2",
+    "cheerio": "1.0.0-rc.10",
     "dayjs": "^1.10.4",
-    "node-fetch": "^2.6.1"
+    "debug": "^4.3.4",
+    "dns-over-http": "^0.2.0",
+    "dns-over-tls": "^0.0.8",
+    "is-browser": "^2.1.0",
+    "lodash.unionby": "^4.8.0",
+    "log": "^6.3.1",
+    "lru-cache": "^7.8.1",
+    "node-fetch": "^2.6.1",
+    "portfinder": "^1.0.28",
+    "yargs-parser": "^21.0.1"
   },
   "devDependencies": {
-    "babel-eslint": "10.1.0",
-    "eslint": "7.12.0",
-    "eslint-config-airbnb-base": "14.2.0",
-    "eslint-config-magic": "2.1.0",
-    "eslint-plugin-eslint-comments": "3.2.0",
-    "eslint-plugin-import": "2.22.1",
-    "eslint-plugin-promise": "4.2.1"
+    "@babel/eslint-parser": "^7.17.0",
+    "@types/debug": "^4.1.7",
+    "@types/lodash.unionby": "^4.8.6",
+    "@types/node-fetch": "^2.6.1",
+    "@types/yargs-parser": "^21.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.19.0",
+    "@typescript-eslint/parser": "^5.19.0",
+    "eslint": "7.32.0",
+    "eslint-config-magic": "^2.3.0",
+    "pkg": "^5.6.0",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
   }
 }

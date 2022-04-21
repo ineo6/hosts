@@ -5,11 +5,19 @@
 `GitHub Hosts`主要是通过修改`host`的方式加速`GitHub`访问，解决图片无法加载以及访问速度慢的问题。
 
 - 主站: https://github.com/ineo6/hosts
-- 镜像地址: https://gitee.com/ineo6/hosts
+- 镜像: https://gitee.com/ineo6/hosts
+
+全新的`GitHub`访问加速工具，等待试用和反馈中，点击 [FastDev](https://github.com/ineo6/fast-dev) 直达。
+
+特点就是稳定！
 
 ## 使用方式
 
-### hosts
+### 1. 远程hosts
+
+现在新增了`DNS`获取方案，欢迎使用并反馈。
+
+请查看 [next hosts](https://gitee.com/ineo6/hosts/raw/master/next-hosts)
 
 内容定时更新，最近更新时间：{update_time}。
 
@@ -17,7 +25,65 @@
 {hostContent}
 ```
 
-### 手动配置hosts
+### 2. 本地 hosts 服务
+
+本地 `hosts` 服务获取到的`ip`是经过本地测试，所以成功率较高。
+
+而且会定时获取最新的`ip`，尽可能保证访问。
+
+注意，该方案需要结合`SwitchHosts`一起使用，或者你也可以直接访问地址，手动复制。
+
+#### macOS (Intel)
+
+执行下面命令, 服务会运行在： http://localhost:8888
+
+```bash
+curl -L https://github.com/ineo6/hosts/releases/download/v1.0.0/hosts-server-pkg-mac-x64.tar.gz | tar xzvf -
+xattr -d com.apple.quarantine ./hosts-server-pkg-mac-x64/hosts-server
+./hosts-server-pkg-mac-x64/hosts-server --port=8888
+```
+
+#### macOS (Apple Silicon)
+
+执行下面命令, 服务会运行在： http://localhost:8888
+
+```bash
+curl -L https://github.com/ineo6/hosts/releases/download/v1.0.0/hosts-server-pkg-mac-arm64.tar.gz | tar xzvf -
+./hosts-server-pkg-mac-arm64/hosts-server --port=8888
+```
+
+### Windows
+
+下载 https://github.com/ineo6/hosts/releases/download/v1.0.0/hosts-server-pkg-win-x64.zip，解压后执行下面命令，服务会运行在： http://localhost:8888
+
+```bash
+.\hosts-server.exe --port=8888
+```
+
+## 配置hosts教程
+
+### 通过 SwitchHosts 自动更新
+
+这里推荐使用 `SwitchHosts` 配置`hosts`，操作很简单，支持跨平台。
+
+> 注意：首次使用先备份下本地hosts。
+
+详细介绍可以阅读 [SwitchHosts! 还能这样管理hosts，后悔没早点用](https://mp.weixin.qq.com/s/A37XnD3HdcGSWUflj6JujQ) 。
+
+#### 操作步骤
+
+添加一条规则：
+
+- 方案名：GitHub（可以自行命名）
+- 类型：远程
+- URL 地址：https://gitee.com/ineo6/hosts/raw/master/hosts
+- 自动更新：1个小时（时间可自行调整）
+
+这样就可以和最新的`hosts`保持同步。
+
+![switchhost-github.png](https://i.loli.net/2021/03/28/XnHW5xCEzel36fA.png)
+
+### 手动配置
 
 #### macOS
 
@@ -54,31 +120,6 @@ sudo killall -HUP mDNSResponder
 ```shell
 ipconfig /flushdns
 ```
-
-### 通过 SwitchHosts! 自动更新
-
-这里推荐使用 `SwitchHosts!` 配置`hosts`，操作很简单，支持跨平台。
-
-详细介绍可以阅读 [SwitchHosts! 还能这样管理hosts，后悔没早点用](https://mp.weixin.qq.com/s/A37XnD3HdcGSWUflj6JujQ) 。
-
-#### 手动配置
-
-添加一条`hosts`规则并启用，然后复制前文`hosts`内容即可。
-
-如果你想保持和云端最新规则同步，可以用下面的配置方式。
-
-#### 定时同步
-
-添加一条规则：
-
-- 方案名：GitHub（可以自行命名）
-- 类型：远程
-- URL 地址：https://gitee.com/ineo6/hosts/raw/master/hosts
-- 自动更新：1个小时
-
-这样就可以和最新的`hosts`保持同步。
-
-![switchhost-github.png](https://i.loli.net/2021/03/28/XnHW5xCEzel36fA.png)
 
 ## 我的作品
 

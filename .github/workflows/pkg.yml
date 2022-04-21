@@ -1,0 +1,159 @@
+name: pkg
+
+on: [push, pull_request]
+
+#on:
+#  push:
+#    tags:
+#      - "v*.*.*"
+
+jobs:
+  build_x64_executables:
+    runs-on: ubuntu-18.04
+    strategy:
+      matrix:
+        pkg_target_without_node:
+          - mac-x64
+          - win-x64
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3.1.1
+        with:
+          node-version: '14'
+      - run: npm ci
+      - run: |
+          set -xeu
+          npm run build
+          ./node_modules/.bin/pkg --out-path=hosts-server-pkg-${{ matrix.pkg_target_without_node }} --targets=node16-${{ matrix.pkg_target_without_node }} ./dist/cli.js
+      - name: tar.gz or zip
+        run: |
+          set -xeu
+          if [ "${{ matrix.pkg_target_without_node }}" = "win-x64" ]; then
+            zip -r hosts-server-pkg-${{ matrix.pkg_target_without_node }}.zip ./hosts-server-pkg-${{ matrix.pkg_target_without_node }}
+          else
+            tar czvf hosts-server-pkg-${{ matrix.pkg_target_without_node }}.tar.gz ./hosts-server-pkg-${{ matrix.pkg_target_without_node }}
+          fi
+      - uses: actions/upload-artifact@v3
+        with:
+          name: build_x64
+          path: |
+            hosts-server-pkg-*.tar.gz
+            hosts-server-pkg-*.zip
+  build_arm_executables:
+    runs-on: ubuntu-18.04
+    strategy:
+      matrix:
+        pkg_target_without_node:
+          - mac-arm64
+          - win-arm64
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+          set -xeu
+          # NOTE: node:16 image causes an error "glob error [Error: EACCES: permission denied, scandir '/root/.npm/_logs'] { ..."
+          docker run --rm -i -v $PWD:/app --platform=linux/arm64/v8 node:14 bash << 'EOF'
+          set -xeu
+          # Install ldid for macos-arm64 signing
+          curl -LO https://github.com/ProcursusTeam/ldid/releases/download/v2.1.5-procursus2/ldid_linux_aarch64
+          chmod +x ldid_linux_aarch64
+          mv ./ldid_linux_aarch64 /usr/local/bin/ldid
+          cd /app
+          npm ci
+          npm run build
+          ./node_modules/.bin/pkg --out-path=hosts-server-pkg-${{ matrix.pkg_target_without_node }} --targets=node16-${{ matrix.pkg_target_without_node }} ./dist/cli.js
+          EOF
+      - name: tar.gz or zip
+        run: |
+          set -xeu
+          if [ "${{ matrix.pkg_target_without_node }}" = "win-arm64" ]; then
+            zip -r hosts-server-pkg-${{ matrix.pkg_target_without_node }}.zip ./hosts-server-pkg-${{ matrix.pkg_target_without_node }}
+          else
+            tar czvf hosts-server-pkg-${{ matrix.pkg_target_without_node }}.tar.gz ./hosts-server-pkg-${{ matrix.pkg_target_without_node }}
+          fi
+      - uses: actions/upload-artifact@v3
+        with:
+          name: build_arm
+          path: |
+            hosts-server-pkg-*.tar.gz
+            hosts-server-pkg-*.zip
+  macos_operational_test:
+    runs-on: macos-10.15
+    needs: build_x64_executables
+    steps:
+      - uses: actions/download-artifact@v3
+        with:
+          name: build_x64
+          path: .
+      - name: Unarchive tar.gz
+        run: tar xvf hosts-server-pkg-mac-x64.tar.gz
+      - name: Operational test
+        run: |
+          set -xeu
+          # Run a server in background
+          ./hosts-server-pkg-mac-x64/hosts-server --port=8080 &> ./hosts-server.log &
+          # Get server PID
+          server_pid=$!
+          # Wait for server running
+          sleep 10
+          # Get data as a file
+          curl localhost:8080 > /tmp/hosts.txt
+          # Print downloaded file
+          cat  /tmp/hosts.txt
+          # Print server's log
+          cat ./hosts-server.log
+          # Stop the server
+          kill $server_pid
+  windows_operational_test:
+    runs-on: windows-2019
+    needs: build_x64_executables
+    steps:
+      - uses: actions/download-artifact@v3
+        with:
+          name: build_x64
+          path: .
+      - name: Unarchive zip
+        run: unzip hosts-server-pkg-win-x64.zip
+      - name: Operational test
+        run: |
+          # Run a server in background
+          $args = @("--port=8080")
+          $server_pid = Start-Process -PassThru -FilePath .\hosts-server-pkg-win-x64\hosts-server.exe -ArgumentList $args | foreach { $_.Id }
+          # Wait for server running
+          sleep 10
+          # Get data as a file
+          curl localhost:8080 > C:\Temp\hosts.txt
+          # Print downloaded file
+          cat  C:\Temp\hosts.txt
+          # Stop the server
+          kill $server_pid
+  release_executables:
+    if: startsWith( github.ref, 'refs/tags/')
+    needs:
+      - macos_operational_test
+      - windows_operational_test
+      - build_arm_executables
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/download-artifact@v3
+        with:
+          name: build_x64
+          path: .
+      - uses: actions/download-artifact@v3
+        with:
+          name: build_arm
+          path: .
+      - run: |
+          set -xeu
+          mkdir ./publish_dir
+          mv hosts-server-pkg-* ./publish_dir
+          # Show and create checksums
+          (cd publish_dir && sha256sum * | tee /dev/stderr > sha256sums.txt)
+
+      # create release
+      - name: release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: "publish_dir/**"
+        env:
+          GITHUB_TOKEN: ${{ secrets.COMMIT_TOKEN }}
