@@ -48,10 +48,12 @@ jobs:
           - win-arm64
     steps:
       - uses: actions/checkout@v3
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v1
       - run: |
           set -xeu
           # NOTE: node:16 image causes an error "glob error [Error: EACCES: permission denied, scandir '/root/.npm/_logs'] { ..."
-          docker run --rm -i -v $PWD:/app --platform=linux/arm64/v8 node:14 /bin/bash << 'EOF'
+          docker run --rm -i -v $PWD:/app --platform=linux/arm64/v8 node:14 bash << 'EOF'
           set -xeu
           # Install ldid for macos-arm64 signing
           curl -LO https://github.com/ProcursusTeam/ldid/releases/download/v2.1.5-procursus2/ldid_linux_aarch64
