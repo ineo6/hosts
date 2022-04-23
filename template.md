@@ -38,7 +38,7 @@
 执行下面命令, 服务会运行在： http://localhost:8888
 
 ```bash
-curl -L https://github.com/ineo6/hosts/releases/download/v1.0.0/hosts-server-pkg-mac-x64.tar.gz | tar xzvf -
+curl -L https://github.com/ineo6/hosts/releases/download/v1.0.1/hosts-server-pkg-mac-x64.tar.gz | tar xzvf -
 xattr -d com.apple.quarantine ./hosts-server-pkg-mac-x64/hosts-server
 ./hosts-server-pkg-mac-x64/hosts-server --port=8888
 ```
@@ -48,13 +48,40 @@ xattr -d com.apple.quarantine ./hosts-server-pkg-mac-x64/hosts-server
 执行下面命令, 服务会运行在： http://localhost:8888
 
 ```bash
-curl -L https://github.com/ineo6/hosts/releases/download/v1.0.0/hosts-server-pkg-mac-arm64.tar.gz | tar xzvf -
+curl -L https://github.com/ineo6/hosts/releases/download/v1.0.1/hosts-server-pkg-mac-arm64.tar.gz | tar xzvf -
 ./hosts-server-pkg-mac-arm64/hosts-server --port=8888
+```
+
+#### Linux (x64, amd64)
+
+执行下面命令, 服务会运行在： http://localhost:8888
+
+```bash
+curl -L https://github.com/ineo6/hosts/releases/download/v1.0.1/hosts-server-pkg-linuxstatic-x64.tar.gz | tar xzvf -
+./hosts-server-pkg-linuxstatic-x64/hosts-server --port=8888
+```
+
+#### Linux (ARM64)
+
+执行下面命令, 服务会运行在： http://localhost:8888
+
+```bash
+curl -L https://github.com/ineo6/hosts/releases/download/v1.0.1/hosts-server-pkg-linuxstatic-arm64.tar.gz | tar xzvf -
+./hosts-server-pkg-linuxstatic-arm64/hosts-server --port=8888
+```
+
+#### Run on Linux (ARMv7 32bit)
+
+执行下面命令, 服务会运行在： http://localhost:8888
+
+```bash
+curl -L https://github.com/ineo6/hosts/releases/download/v1.0.1/hosts-server-pkg-linuxstatic-armv7.tar.gz | tar xzvf -
+./hosts-server-pkg-linuxstatic-armv7/hosts-server --port=8888
 ```
 
 ### Windows
 
-下载 https://github.com/ineo6/hosts/releases/download/v1.0.0/hosts-server-pkg-win-x64.zip，解压后执行下面命令，服务会运行在： http://localhost:8888
+下载 https://github.com/ineo6/hosts/releases/download/v1.0.1/hosts-server-pkg-win-x64.zip ，解压后执行下面命令，服务会运行在： http://localhost:8888
 
 ```bash
 .\hosts-server.exe --port=8888

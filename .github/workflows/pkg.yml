@@ -13,6 +13,8 @@ jobs:
         pkg_target_without_node:
           - mac-x64
           - win-x64
+          - linuxstatic-x64
+          - linux-x64
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3.1.1
@@ -37,6 +39,7 @@ jobs:
           path: |
             hosts-server-pkg-*.tar.gz
             hosts-server-pkg-*.zip
+
   build_arm_executables:
     runs-on: ubuntu-18.04
     strategy:
@@ -44,6 +47,9 @@ jobs:
         pkg_target_without_node:
           - mac-arm64
           - win-arm64
+          - linuxstatic-arm64
+          - linuxstatic-armv7
+          - linux-arm64
     steps:
       - uses: actions/checkout@v3
       - name: Set up QEMU
@@ -76,6 +82,7 @@ jobs:
           path: |
             hosts-server-pkg-*.tar.gz
             hosts-server-pkg-*.zip
+
   macos_operational_test:
     runs-on: macos-10.15
     needs: build_x64_executables
@@ -103,6 +110,7 @@ jobs:
           cat ./hosts-server.log
           # Stop the server
           kill $server_pid
+
   windows_operational_test:
     runs-on: windows-2019
     needs: build_x64_executables
@@ -126,11 +134,41 @@ jobs:
           cat  C:\Temp\hosts.txt
           # Stop the server
           kill $server_pid
+
+  linux_operational_test:
+    runs-on: ubuntu-18.04
+    needs: build_x64_executables
+    steps:
+      - uses: actions/download-artifact@v3
+        with:
+          name: build_x64
+          path: .
+      - name: Unarchive tar.gz
+        run: tar xvf hosts-server-pkg-linuxstatic-x64.tar.gz
+      - name: Operational test
+        run: |
+          set -xeu
+          # Run a server in background
+          ./hosts-server-pkg-linuxstatic-x64/hosts-server --port=8080 &> ./hosts-server.log &
+          # Get server PID
+          server_pid=$!
+          # Wait for server running
+          sleep 10
+          # Get data as a file
+          curl localhost:8080 > /tmp/hosts.txt
+          # Print downloaded file
+          cat  /tmp/hosts.txt
+          # Print server's log
+          cat ./hosts-server.log
+          # Stop the server
+          kill $server_pid
+
   release_executables:
     if: startsWith( github.ref, 'refs/tags/')
     needs:
       - macos_operational_test
       - windows_operational_test
+      - linux_operational_test
       - build_arm_executables
     runs-on: ubuntu-18.04
     steps:
