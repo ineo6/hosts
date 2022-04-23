@@ -19,7 +19,7 @@
 
 请查看 [next hosts](https://gitee.com/ineo6/hosts/raw/master/next-hosts)
 
-内容定时更新，最近更新时间：2022-04-23 20:20:40。
+内容定时更新，最近更新时间：2022-04-23 21:32:35。
 
 ```bash
 # New！欢迎使用基于DNS的新方案
@@ -47,7 +47,7 @@
 185.199.108.133              avatars1.githubusercontent.com
 185.199.108.133              avatars0.githubusercontent.com
 185.199.108.133              avatars.githubusercontent.com
-140.82.112.9                 codeload.github.com
+140.82.113.10                codeload.github.com
 52.217.135.81                github-cloud.s3.amazonaws.com
 52.216.186.75                github-com.s3.amazonaws.com
 52.217.201.201               github-production-release-asset-2e65be.s3.amazonaws.com
@@ -62,7 +62,7 @@
 # Please Star : https://github.com/ineo6/hosts
 # Mirror Repo : https://gitee.com/ineo6/hosts
 
-# Update at: 2022-04-23 20:20:40
+# Update at: 2022-04-23 21:32:35
 
 # GitHub Host End
 ```
@@ -80,7 +80,7 @@
 执行下面命令, 服务会运行在： http://localhost:8888
 
 ```bash
-curl -L https://github.com/ineo6/hosts/releases/download/v1.0.0/hosts-server-pkg-mac-x64.tar.gz | tar xzvf -
+curl -L https://github.com/ineo6/hosts/releases/download/v1.0.1/hosts-server-pkg-mac-x64.tar.gz | tar xzvf -
 xattr -d com.apple.quarantine ./hosts-server-pkg-mac-x64/hosts-server
 ./hosts-server-pkg-mac-x64/hosts-server --port=8888
 ```
@@ -90,13 +90,40 @@ xattr -d com.apple.quarantine ./hosts-server-pkg-mac-x64/hosts-server
 执行下面命令, 服务会运行在： http://localhost:8888
 
 ```bash
-curl -L https://github.com/ineo6/hosts/releases/download/v1.0.0/hosts-server-pkg-mac-arm64.tar.gz | tar xzvf -
+curl -L https://github.com/ineo6/hosts/releases/download/v1.0.1/hosts-server-pkg-mac-arm64.tar.gz | tar xzvf -
 ./hosts-server-pkg-mac-arm64/hosts-server --port=8888
+```
+
+#### Linux (x64, amd64)
+
+执行下面命令, 服务会运行在： http://localhost:8888
+
+```bash
+curl -L https://github.com/ineo6/hosts/releases/download/v1.0.1/hosts-server-pkg-linuxstatic-x64.tar.gz | tar xzvf -
+./hosts-server-pkg-linuxstatic-x64/hosts-server --port=8888
+```
+
+#### Linux (ARM64)
+
+执行下面命令, 服务会运行在： http://localhost:8888
+
+```bash
+curl -L https://github.com/ineo6/hosts/releases/download/v1.0.1/hosts-server-pkg-linuxstatic-arm64.tar.gz | tar xzvf -
+./hosts-server-pkg-linuxstatic-arm64/hosts-server --port=8888
+```
+
+#### Run on Linux (ARMv7 32bit)
+
+执行下面命令, 服务会运行在： http://localhost:8888
+
+```bash
+curl -L https://github.com/ineo6/hosts/releases/download/v1.0.1/hosts-server-pkg-linuxstatic-armv7.tar.gz | tar xzvf -
+./hosts-server-pkg-linuxstatic-armv7/hosts-server --port=8888
 ```
 
 ### Windows
 
-下载 https://github.com/ineo6/hosts/releases/download/v1.0.0/hosts-server-pkg-win-x64.zip，解压后执行下面命令，服务会运行在： http://localhost:8888
+下载 https://github.com/ineo6/hosts/releases/download/v1.0.1/hosts-server-pkg-win-x64.zip ，解压后执行下面命令，服务会运行在： http://localhost:8888
 
 ```bash
 .\hosts-server.exe --port=8888
