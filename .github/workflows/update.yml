@@ -2,6 +2,8 @@ name: UpdateHosts
 
 on:
   push:
+    tags-ignore:
+      - "v*.*.*"
   schedule:
     - cron: '0 */2 * * *'
 
