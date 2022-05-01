@@ -49,6 +49,22 @@ jobs:
         with:
           github_token: ${{ secrets.COMMIT_TOKEN }}
 
+  gh-pages:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Move files
+        run: |
+          mkdir ./public
+          mv ./README.md ./public/
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.COMMIT_TOKEN }}
+          publish_dir: ./public
+          enable_jekyll: true
+
   git-mirror:
     needs: build
     runs-on: ubuntu-latest
