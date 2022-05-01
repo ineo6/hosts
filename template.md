@@ -6,6 +6,7 @@
 
 - 主站: https://github.com/ineo6/hosts
 - 镜像: https://gitee.com/ineo6/hosts
+- Github Pages: https://ineo6.github.io/hosts/
 
 全新的`GitHub`访问加速工具，等待试用和反馈中，点击 [FastDev](https://github.com/ineo6/fast-dev) 直达。
 
