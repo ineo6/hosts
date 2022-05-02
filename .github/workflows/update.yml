@@ -60,6 +60,7 @@ jobs:
           github_token: ${{ secrets.COMMIT_TOKEN }}
           publish_dir: ./public
           enable_jekyll: true
+          keep_files: true
 
   git-mirror:
     needs: build
