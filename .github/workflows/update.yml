@@ -62,13 +62,13 @@ jobs:
           enable_jekyll: true
           keep_files: true
 
-#  git-mirror:
-#    needs: build
-#    runs-on: ubuntu-latest
-#    steps:
-#      - uses: wearerequired/git-mirror-action@v1
-#        env:
-#          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-#        with:
-#          source-repo: 'git@github.com:ineo6/hosts.git'
-#          destination-repo: 'git@gitee.com:ineo6/hosts.git'
+  git-mirror:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: wearerequired/git-mirror-action@v1
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        with:
+          source-repo: 'git@github.com:ineo6/hosts.git'
+          destination-repo: 'git@gitlab.com:ineo6/hosts.git'
