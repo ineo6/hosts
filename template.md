@@ -5,12 +5,14 @@
 `GitHub Hosts`主要是通过修改`host`的方式加速`GitHub`访问，解决图片无法加载以及访问速度慢的问题。
 
 - 主站: https://github.com/ineo6/hosts
-- 镜像: https://gitee.com/ineo6/hosts
+- 镜像: https://gitlab.com/ineo6/hosts
 - Github Pages: https://ineo6.github.io/hosts/
 
 全新的`GitHub`访问加速工具，等待试用和反馈中，点击 [FastDev](https://github.com/ineo6/fast-dev) 直达。
 
 特点就是稳定！
+
+> `hosts`地址可能会调整，所以请务必关注GitHub、Gitlab主页，保证不迷路，也可以关注公众号：湖中剑。
 
 ## 使用方式
 
@@ -18,7 +20,7 @@
 
 现在新增了`DNS`获取方案，欢迎使用并反馈。
 
-请查看 [next hosts](https://gitee.com/ineo6/hosts/raw/master/next-hosts)
+请查看 [next hosts](https://gitlab.com/ineo6/hosts/-/raw/master/next-hosts)
 
 内容定时更新，最近更新时间：{update_time}。
 
@@ -104,7 +106,7 @@ curl -L https://github.com/ineo6/hosts/releases/download/v1.0.1/hosts-server-pkg
 
 - 方案名：GitHub（可以自行命名）
 - 类型：远程
-- URL 地址：https://gitee.com/ineo6/hosts/raw/master/hosts
+- URL 地址：https://gitlab.com/ineo6/hosts/-/raw/master/hosts
 - 自动更新：1个小时（时间可自行调整）
 
 这样就可以和最新的`hosts`保持同步。
@@ -152,7 +154,6 @@ ipconfig /flushdns
 ## 我的作品
 
 - [GitMaster](https://github.com/ineo6/git-master)：开发者助手，代码仓库结构浏览器扩展
-- [Weekly 周刊](https://github.com/ineo6/weekly)：我的前端周刊，GitHub周刊
 - [homebrew-install](https://github.com/ineo6/homebrew-install)：Homebrew快速安装教程和脚本
 - [GitHub Hosts](https://github.com/ineo6/hosts)：GitHub最新hosts，定时更新
 - [mp-ci](https://github.com/ineo6/mp-ci)：微信小程序、小游戏发布助手（CI）

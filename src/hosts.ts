@@ -32,7 +32,7 @@ const ipAddressFooter = '.ipaddress.com';
 const tpl = `
 {content}
 # Please Star : https://github.com/ineo6/hosts
-# Mirror Repo : https://gitee.com/ineo6/hosts
+# Mirror Repo : https://gitlab.com/ineo6/hosts
 `;
 
 function resolveUrl(url: string) {
@@ -104,7 +104,9 @@ interface UpdateConfig {
 function hostsTpl(content: string, time: string) {
   return [
     '# New！欢迎使用基于DNS的新方案',
-    '# https://gitee.com/ineo6/hosts/raw/master/next-hosts',
+    '# https://gitlab.com/ineo6/hosts/-/raw/master/next-hosts',
+    '# 地址可能会变动，请务必关注GitHub、Gitlab获取最新消息',
+    '# 也可以关注公众号：湖中剑，保证不迷路',
     '# GitHub Host Start\n',
     `${content}\n`,
     `# Update at: ${time}\n`,
