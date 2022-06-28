@@ -22,7 +22,7 @@
 
 请查看 [next hosts](https://gitlab.com/ineo6/hosts/-/raw/master/next-hosts)
 
-内容定时更新，最近更新时间：2022-06-28 18:14:08。
+内容定时更新，最近更新时间：2022-06-28 20:25:42。
 
 ```bash
 # New！欢迎使用基于DNS的新方案
@@ -53,7 +53,7 @@
 185.199.108.133              avatars0.githubusercontent.com
 185.199.108.133              avatars.githubusercontent.com
 140.82.112.9                 codeload.github.com
-52.217.86.28                 github-cloud.s3.amazonaws.com
+52.217.78.188                github-cloud.s3.amazonaws.com
 52.217.110.172               github-com.s3.amazonaws.com
 52.216.137.172               github-production-release-asset-2e65be.s3.amazonaws.com
 52.216.140.204               github-production-user-asset-6210df.s3.amazonaws.com
@@ -68,7 +68,7 @@
 # Please Star : https://github.com/ineo6/hosts
 # Mirror Repo : https://gitlab.com/ineo6/hosts
 
-# Update at: 2022-06-28 18:14:08
+# Update at: 2022-06-28 20:25:42
 
 # GitHub Host End
 ```
