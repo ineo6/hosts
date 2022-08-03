@@ -156,4 +156,5 @@ ipconfig /flushdns
 - [GitMaster](https://github.com/ineo6/git-master)：开发者助手，代码仓库结构浏览器扩展
 - [homebrew-install](https://github.com/ineo6/homebrew-install)：Homebrew快速安装教程和脚本
 - [GitHub Hosts](https://github.com/ineo6/hosts)：GitHub最新hosts，定时更新
+- [Awesome Mirror](https://github.com/ineo6/awesome-mirror)：镜像收集，旨在帮助你快速安装开发工具
 - [mp-ci](https://github.com/ineo6/mp-ci)：微信小程序、小游戏发布助手（CI）
