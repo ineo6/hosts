@@ -4,15 +4,15 @@
 # 也可以关注公众号：湖中剑，保证不迷路
 # GitHub Host Start
 
-140.82.114.3                 central.github.com
-140.82.114.3                 assets-cdn.github.com
+140.82.113.3                 central.github.com
+140.82.113.3                 assets-cdn.github.com
 151.101.1.6                  github.map.fastly.net
 151.101.1.6                  github.global.ssl.fastly.net
-140.82.114.3                 gist.github.com
+140.82.113.3                 gist.github.com
 185.199.108.153              github.io
-140.82.114.3                 github.com
-140.82.114.3                 api.github.com
-140.82.114.3                 codeload.github.com
+140.82.113.3                 github.com
+140.82.113.3                 api.github.com
+140.82.113.3                 codeload.github.com
 72.21.206.80                 github-cloud.s3.amazonaws.com
 72.21.206.80                 github-com.s3.amazonaws.com
 72.21.206.80                 github-production-release-asset-2e65be.s3.amazonaws.com
@@ -20,11 +20,11 @@
 72.21.206.80                 github-production-repository-file-5c1aeb.s3.amazonaws.com
 185.199.108.153              githubstatus.com
 140.82.114.18                github.community
-140.82.114.3                 raw.github.com
+140.82.113.3                 raw.github.com
 
 # Please Star : https://github.com/ineo6/hosts
 # Mirror Repo : https://gitlab.com/ineo6/hosts
 
-# Update at: 2022-10-10 16:26:32
+# Update at: 2022-10-10 22:37:41
 
 # GitHub Host End
