@@ -27,7 +27,7 @@ const nextFilePath = {
   hosts: path.join('./', 'next-hosts'),
 }
 
-const ipAddressFooter = '.ipaddress.com';
+const ipAddressBaseUrl = 'https://www.ipaddress.com/site/';
 
 const tpl = `
 {content}
@@ -35,14 +35,8 @@ const tpl = `
 # Mirror Repo : https://gitlab.com/ineo6/hosts
 `;
 
-function resolveUrl(url: string) {
-  const urlBody = url.split('.');
-
-  if (urlBody.length > 2) {
-    return 'https://' + urlBody[urlBody.length - 2] + '.' + urlBody[urlBody.length - 1] + ipAddressFooter + '/' + url;
-  }
-
-  return 'https://' + url + ipAddressFooter;
+function resolveUrl(host: string) {
+  return ipAddressBaseUrl + host;
 }
 
 async function findIp(host: string) {
@@ -57,11 +51,11 @@ async function findIp(host: string) {
 
   const ipList: string[] = [];
 
-  $('#dnsinfo>tr')
+  $('#dns tr')
     .each((i, element) => {
       let td = $(element).children();
 
-      if ($(td[1]).text() === 'A') {
+      if ($(td[0]).text() === 'A') {
         ipList.push($(element)
           .children()
           .last()
