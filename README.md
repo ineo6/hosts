@@ -22,7 +22,7 @@
 
 请查看 [next hosts](https://gitlab.com/ineo6/hosts/-/raw/master/next-hosts)
 
-内容定时更新，最近更新时间：2022-11-24 20:24:52。
+内容定时更新，最近更新时间：2022-12-17 22:10:29。
 
 ```bash
 # New！欢迎使用基于DNS的新方案
@@ -31,10 +31,42 @@
 # 也可以关注公众号：湖中剑，保证不迷路
 # GitHub Host Start
 
+185.199.108.154              github.githubassets.com
+140.82.113.22                central.github.com
+185.199.108.133              desktop.githubusercontent.com
+185.199.108.153              assets-cdn.github.com
+185.199.108.133              camo.githubusercontent.com
+185.199.108.133              github.map.fastly.net
+151.101.1.194                github.global.ssl.fastly.net
+140.82.113.4                 gist.github.com
+185.199.108.153              github.io
+140.82.113.4                 github.com
+185.199.108.133              raw.githubusercontent.com
+185.199.108.133              user-images.githubusercontent.com
+185.199.108.133              favicons.githubusercontent.com
+185.199.108.133              avatars5.githubusercontent.com
+185.199.108.133              avatars4.githubusercontent.com
+185.199.108.133              avatars3.githubusercontent.com
+185.199.108.133              avatars2.githubusercontent.com
+185.199.108.133              avatars1.githubusercontent.com
+185.199.108.133              avatars0.githubusercontent.com
+185.199.108.133              avatars.githubusercontent.com
+140.82.114.9                 codeload.github.com
+3.5.0.1                      github-cloud.s3.amazonaws.com
+3.5.0.129                    github-com.s3.amazonaws.com
+52.216.33.65                 github-production-release-asset-2e65be.s3.amazonaws.com
+3.5.19.16                    github-production-user-asset-6210df.s3.amazonaws.com
+3.5.10.138                   github-production-repository-file-5c1aeb.s3.amazonaws.com
+185.199.108.153              githubstatus.com
+185.199.108.133              media.githubusercontent.com
+185.199.108.133              objects.githubusercontent.com
+185.199.108.133              raw.github.com
+20.80.64.28                  copilot-proxy.githubusercontent.com
+
 # Please Star : https://github.com/ineo6/hosts
 # Mirror Repo : https://gitlab.com/ineo6/hosts
 
-# Update at: 2022-11-24 20:24:52
+# Update at: 2022-12-17 22:10:29
 
 # GitHub Host End
 ```
