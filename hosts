@@ -29,7 +29,6 @@
 3.5.8.181                    github-cloud.s3.amazonaws.com
 3.5.3.117                    github-com.s3.amazonaws.com
 3.5.10.213                   github-production-release-asset-2e65be.s3.amazonaws.com
-3.5.10.182                   github-production-user-asset-6210df.s3.amazonaws.com
 3.5.17.0                     github-production-repository-file-5c1aeb.s3.amazonaws.com
 185.199.108.153              githubstatus.com
 140.82.112.18                github.community
@@ -41,6 +40,6 @@
 # Please Star : https://github.com/ineo6/hosts
 # Mirror Repo : https://gitlab.com/ineo6/hosts
 
-# Update at: 2023-02-01 18:12:40
+# Update at: 2023-02-01 22:10:27
 
 # GitHub Host End
