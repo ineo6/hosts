@@ -24,7 +24,8 @@ const filePath = {
 
 const nextFilePath = {
   tpl: path.join('./', 'template.md'),
-  hosts: path.join('./', 'next-hosts'),
+  hosts: path.join('./', 'hosts'),
+  bothHosts: path.join('./', 'next-hosts'),
 }
 
 const ipAddressBaseUrl = 'https://www.ipaddress.com/site/';
@@ -97,8 +98,6 @@ interface UpdateConfig {
 
 function hostsTpl(content: string, time: string) {
   return [
-    '# New！欢迎使用基于DNS的新方案',
-    '# https://gitlab.com/ineo6/hosts/-/raw/master/next-hosts',
     '# 地址可能会变动，请务必关注GitHub、Gitlab获取最新消息',
     '# 也可以关注公众号：湖中剑，保证不迷路',
     '# GitHub Host Start\n',
@@ -213,6 +212,10 @@ export function updateNextHosts() {
 
       saveHosts(newHosts, {
         hostDest: nextFilePath.hosts
+      })
+
+      saveHosts(newHosts, {
+        hostDest: nextFilePath.bothHosts
       })
     }
   });
