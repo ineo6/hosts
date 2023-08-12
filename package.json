@@ -9,7 +9,6 @@
   "scripts": {
     "build": "tsc",
     "make": "ts-node ./src/index.ts --type=default",
-    "make:next": "ts-node ./src/index.ts --type=next",
     "pkg:mac": "pkg . -t node14-mac-x64 -o app-mac",
     "pkg:win": "pkg . -t node14-win-x64 -o app-win"
   },

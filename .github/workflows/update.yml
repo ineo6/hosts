@@ -28,9 +28,6 @@ jobs:
       - name: Update hosts
         run: npm run make
 
-      - name: Update next hosts
-        run: npm run make:next
-
       - name: Commit
         id: commit
         run: |
