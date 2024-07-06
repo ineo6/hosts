@@ -4,41 +4,41 @@
 
 185.199.111.154              github.githubassets.com
 140.82.113.21                central.github.com
-185.199.110.133              desktop.githubusercontent.com
+185.199.108.133              desktop.githubusercontent.com
 185.199.108.153              assets-cdn.github.com
 185.199.108.133              camo.githubusercontent.com
-185.199.109.133              github.map.fastly.net
-151.101.65.194               github.global.ssl.fastly.net
-140.82.116.4                 gist.github.com
+185.199.111.133              github.map.fastly.net
+151.101.193.194              github.global.ssl.fastly.net
+140.82.114.3                 gist.github.com
 185.199.111.153              github.io
-140.82.116.3                 github.com
-140.82.116.5                 api.github.com
+140.82.113.3                 github.com
+140.82.114.6                 api.github.com
 185.199.108.133              raw.githubusercontent.com
-185.199.108.133              user-images.githubusercontent.com
+185.199.109.133              user-images.githubusercontent.com
 185.199.111.133              favicons.githubusercontent.com
-185.199.111.133              avatars5.githubusercontent.com
-185.199.109.133              avatars4.githubusercontent.com
-185.199.109.133              avatars3.githubusercontent.com
-185.199.110.133              avatars2.githubusercontent.com
-185.199.108.133              avatars1.githubusercontent.com
-185.199.109.133              avatars0.githubusercontent.com
-185.199.110.133              avatars.githubusercontent.com
-140.82.116.10                codeload.github.com
-52.217.195.241               github-cloud.s3.amazonaws.com
-52.217.137.161               github-com.s3.amazonaws.com
-54.231.169.161               github-production-release-asset-2e65be.s3.amazonaws.com
-16.182.70.25                 github-production-user-asset-6210df.s3.amazonaws.com
-52.217.233.65                github-production-repository-file-5c1aeb.s3.amazonaws.com
-185.199.111.153              githubstatus.com
-140.82.113.18                github.community
-185.199.108.133              media.githubusercontent.com
-185.199.108.133              objects.githubusercontent.com
+185.199.110.133              avatars5.githubusercontent.com
+185.199.111.133              avatars4.githubusercontent.com
+185.199.111.133              avatars3.githubusercontent.com
+185.199.111.133              avatars2.githubusercontent.com
+185.199.109.133              avatars1.githubusercontent.com
+185.199.111.133              avatars0.githubusercontent.com
+185.199.111.133              avatars.githubusercontent.com
+140.82.112.9                 codeload.github.com
+52.217.197.73                github-cloud.s3.amazonaws.com
+54.231.131.41                github-com.s3.amazonaws.com
+52.216.184.3                 github-production-release-asset-2e65be.s3.amazonaws.com
+52.217.227.41                github-production-user-asset-6210df.s3.amazonaws.com
+52.216.76.68                 github-production-repository-file-5c1aeb.s3.amazonaws.com
+185.199.109.153              githubstatus.com
+140.82.112.18                github.community
+185.199.110.133              media.githubusercontent.com
+185.199.110.133              objects.githubusercontent.com
 185.199.111.133              raw.github.com
-138.91.182.224               copilot-proxy.githubusercontent.com
+4.249.131.160                copilot-proxy.githubusercontent.com
 
 # Please Star : https://github.com/ineo6/hosts
 # Mirror Repo : https://gitlab.com/ineo6/hosts
 
-# Update at: 2024-07-06 20:21:32
+# Update at: 2024-07-06 22:11:27
 
 # GitHub Host End
