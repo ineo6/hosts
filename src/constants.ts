@@ -59,5 +59,6 @@ export const githubUrls = [
   'media.githubusercontent.com',
   'objects.githubusercontent.com',
   'raw.github.com',
+  'ssh.github.com',
   'copilot-proxy.githubusercontent.com'
 ];
